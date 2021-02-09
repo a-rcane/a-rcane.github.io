@@ -1,21 +1,23 @@
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 50%; /* 0 width - change this with JavaScript */
+  width: 20%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 25%; /* Place content 60px from the top */
+  padding-left: 6%;
+  padding-right: 6%;
+  text-align: center;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  font-family: "Comic sans MS";
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 0px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
@@ -25,8 +27,8 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
-  background-color: #3399ff;
+  color: #111;
+  background-color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
@@ -42,11 +44,63 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 /*transition: margin-left .5s;*/
+  padding-left: 50%;
+  transition: 0.8s;
+
+}
+
+#content{
+  height: 100%;
+  background-color: #0D001A;
   padding: 50%;
+  transition: 0.8s;
+
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-height: 500px) {
+  .sidenav{
+    padding-top: 35%;
+  }
+  .sidenav a {
+    font-size: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #003333; 
+}
+
+#myCarousel{
+  margin-left: 14%;
+  height: 100%;
+  width: 95%;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
